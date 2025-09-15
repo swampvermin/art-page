@@ -1,0 +1,565 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #ffbcfc;
+    height: 100vh;
+    font-size: 12px;
+}
+#desktop { position: relative; width: 100%; height: 100%; }
+
+/*link */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+/* --------------------------- */
+/* Folder Icons */
+/* --------------------------- */
+
+.folders{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.folder {
+    margin: 20px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.folder img { width: 100%; }
+.folder p, .website p { 
+    margin: 5px 0 0 0; 
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    
+}
+
+.section {
+    display: none; /* hide everything by default */
+}
+.section.active {
+    display: block; /* only active one shows */
+}
+
+/* --------------------------- */
+/* Desktop Images */
+/* --------------------------- */
+
+.gif{
+    position: absolute;
+}
+
+.desktop-image{
+    position: absolute;
+}
+
+.desktop-image p{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    margin-top: 120px;
+    width: 300px;
+}
+
+.desktop-image img{
+    width: 125px;
+    height: auto;
+    position: absolute;
+}
+/* --------------------------- */
+/* Notes & Sticky Boxes */
+/* --------------------------- */
+
+/* Large Notes for desktop */
+.large-note{
+    position: absolute;
+}
+.large-note img{
+    width: 400px;
+}
+
+.large-note div{
+    position: absolute;
+    margin-top: -280px;
+    margin-left: 30px;
+    color: white;
+    width: 340px;
+    height: 240px;
+}
+
+.smaller-note{
+    position: absolute;
+}
+.smaller-note img{
+    width: 260px
+}
+
+.smaller-note div{
+    position: absolute;
+    color: white;
+    width: 250px;
+    height: 215px;
+    top: 78px;
+    left: 5px;
+    overflow-y: scroll;
+}
+
+.smaller-note .note-img{
+    width: 200px;
+}
+
+/* --------------------------- */
+
+/* home page */
+/* --------------------------- */
+
+
+.blue-sticky-note{
+    position: absolute;
+    width: 350px;
+}
+
+.blue-sticky-note p{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 270px;
+}
+
+.gray-sticky-note{
+    position: absolute;
+    height: 180px;;
+}
+
+.gray-sticky-note p{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 270px;
+}
+
+#home-sticky{
+    top: 430px;
+    left: 200px;
+}
+
+
+.preview-img{
+    position: absolute;
+    width: 380px;
+}
+
+#workspace{
+    top: 40px;
+    left: 950px;
+}
+
+#tree-img{
+    top: 360px;
+    left: 700px;
+    width: 500px;
+}
+
+#intro-note{
+    top: 5px;
+    left: 180px;
+}
+
+#moon{
+    top: 380px;
+    left: 600px;
+    width: 50px;
+
+}
+
+#tree{
+    top: 130px;
+    left: 660px;
+    width: 120px;
+}
+
+#heart{
+    top: 380px;
+    left: 260px;
+    width: 30px;
+}
+
+/* --------------------------- */
+
+/* music page */
+/* --------------------------- */
+/* manually coding img positions */
+
+.mp3-player img{
+    width: 250px;
+}
+
+
+#chords{
+  top: 400px; 
+  left: 1110px;  
+}
+
+#chords p{
+    margin-top: 240px;
+    width: 150px;
+
+}
+
+#chords audio{
+    margin-top: 260px;
+}
+
+#beat-07-07-25-mexicoCookup{
+    top: 380px; 
+    left: 800px; 
+
+}
+
+#beat-07-07-25-mexicoCookup p{  
+    margin-top: 230px;
+}
+
+#beat-07-07-25-mexicoCookup audio{
+    margin-top: 250px;
+}
+
+#beat-jun-24-quickie{
+ 
+
+    top: 440px; 
+    left: 360px;  
+
+}
+
+#beat-jun-24-quickie p{  
+    margin-top: 240px;
+
+}
+
+#beat-jun-24-quickie audio{
+    margin-top: 260px;
+}
+
+#swamp-pic{
+  top: 360px; 
+  left: 200px;  
+
+}
+
+#swamp-pic p{
+margin-top: 100px;
+}
+
+/* --------------------------- */
+/* music vid */
+/* --------------------------- */
+.mv{
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    width: 200px;
+}
+
+.mv + p{
+    position: absolute;
+    top: 305px;
+    left: 700px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* manually coding note positions */
+#music-note{
+    top: 0px;
+    left: 200px;
+}
+
+#music-note ul{
+    list-style-type: circle;
+    margin-left: 30px;
+    color: white;
+}
+
+/* diff vst images*/
+
+#purity {
+  top: 120px;         /* distance from the top of the page (or parent) */
+  left: 1200px;        /* distance from the left */
+}
+
+#purity p {
+    margin-top: 100px;
+    width: 150px;
+}
+
+#wavestation {
+  top: 90px;         /* distance from the top of the page (or parent) */
+  left: 1090px;        /* distance from the left */
+}
+
+#wavestation p {
+    margin-top: 70px;
+    width: 150px;
+}
+
+#dexxed {
+  top: 230px;         /* distance from the top of the page (or parent) */
+  left: 1050px;        /* distance from the left */
+}
+
+#dexxed p {
+    margin-top: 98px;
+    width: 150px;
+}
+
+/*.  */
+/*. photos gallery */
+/*.  */
+
+#photos-note{
+    top:30px;
+    left: 130px;
+}
+
+#gallery-finder{
+    position: absolute;
+    width: 850px;
+    height: auto;
+    top: 50px;
+    left: 430px;
+}
+
+#photos-gallery{
+    position: absolute;
+    top:110px;
+    left: 575px;
+    width: 680px;
+    height: 650px;
+    overflow-y: scroll;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#photos-gallery div{
+    align-content: center;
+
+}
+
+#photos-gallery div img{
+    padding: 3px;
+    background: white;
+    max-height: 80px;
+    max-width: 80px;
+    margin: 0px
+}
+
+#photos-gallery div img:hover{
+    cursor: pointer;
+}
+
+#photos-gallery div p{
+    margin-top: 8px;
+    max-width: 100px;
+    overflow-x: scroll;
+}
+
+
+/* Overlay background */
+#image-overlay {
+  position: fixed;
+  display: none; /* hidden by default */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Enlarged image */
+#image-overlay img {
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(120, 120, 120, 0.1);
+  position: relative;
+}
+
+#close-overlay {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+/*PRINT PAGEEEEE */
+#print-sticky{
+    top: 30px;
+    left: 140px;
+    height: 100px;
+}
+
+#one-pager{
+    top: 220px;
+    left: 120px;
+
+}
+
+#one-pager2{
+    top: 30px;
+    left: 1200px;
+
+}
+
+#poster1{
+    position: absolute;
+    width: 250px;
+    height: auto;
+
+    top: 480px;
+    left: 340px;
+    z-index: 1;
+}
+
+#print-finder{
+    position: absolute;
+    width: 670px;
+    height: auto;
+    top: 20px;
+    left: 440px;
+}
+
+#print-gallery{
+    position: absolute;
+    top:70px;
+    left: 575px;
+    width: 530px;
+    height: 560px;
+    overflow-y: scroll;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#print-gallery div{
+    align-content: center;
+
+}
+
+#print-gallery div img{
+    padding: 3px;
+    background: white;
+    width: 200px;
+
+    margin: 0px
+}
+
+#print-gallery div p{
+    margin-top: 8px;
+    max-width: 100px;
+    overflow-x: scroll;
+}
+
+#cemetery{
+    position: absolute;
+    left: 1040px;
+    top: 400px;
+}
+
+#cemetery div{
+
+    overflow-y: scroll;
+}
+
+#cemetery div img{
+    width: 300px;
+}
+
+/* */
+/* nyc graffiti */
+/* */
+
+.website{
+    position: absolute;
+    color: white;
+}
+
+.website img{
+    width: 80px;
+    
+}
+
+#nycGraffiti{
+    top: 500px;
+    left: 200px;
+}
+
+#net-art{
+    top: 300px;
+    left: 300px;
+}
+
+#medium{
+    top: 430px;
+    left: 400px;
+}
+
+#room-3d{
+    top: 30px;
+    left: 880px;
+}
+
+.digital-img{
+    position: absolute;
+    height: 400px;
+}
+
+#blend{
+    top: 350px;
+    left: 500px;
+}
+
+#space{
+    top: 100px;
+    left: 560px;
+}
+
+#clock{
+    top: 150px;
+    left: 700px;
+}
+
+
+
+
+
